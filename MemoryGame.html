@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="MemoryGame.css">
+    <title></title>
+</head>
+
+<body>
+
+    <div id="glass1" class="glass"></div>
+    <div id="glass2" class="glass"></div>
+    <div id="glass3" class="glass"></div>
+    <div id="glass4" class="glass"></div>
+    <div id="glass5" class="glass"></div>
+    <div id="glass6" class="glass"></div>
+    <div id="glass7" class="glass"></div>
+    <div id="glass8" class="glass"></div>
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <div id="b3"></div>
+    <button id="button-refresh" class="glass">Refresh</button>
+    <div id="card-flip-game" class="glass">Card Flip Game <br> Made by- Vishu Kalier
+        <button id="begin-button" class="glass">Begin</button>
+    </div>
+    <div id="rules" class="glass">Rules:-<br>1. The Goal of the game is to flip cards and match all pair of cards hidden...<br> 2. You will have two chances per shot to get a Matching pair of cards... <br> 3. The Matched Pair of the Flipped Cards will be matched out and disabled...<br>4.
+        A Correct Matching Pair will award you 2 points... <br> 5. A Wrong Matched pair will decrease your point score by 1...
+    </div>
+    <button id="back-button" class="glass">Back</button>
+    <button id="start-button" class="glass">Start</button>
+    <button id="end-Button" class="glass">End</button>
+    <div id="display-score" class="glass">Congratulations
+        <div id="total-score" class="glass">Your Score is : <span id="score-board"></span></div>
+        <div id="total-flips" class="glass">Your Flips were : <span id="flips-board"></span></div>
+    </div>
+    <div id="score" class="glass">Your Score : <span id="score-value">0</span></div>
+    <section id="Memory-game">
+        <div class="memory-card" data-framework="one">
+            <img src="Card Logos/angel.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="two">
+            <img src="Card Logos/apple (1).png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="three">
+            <img src="Card Logos/apple.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="four">
+            <img src="Card Logos/cloud-service.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="five">
+            <img src="Card Logos/css.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="six">
+            <img src="Card Logos/earth-globe.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="seven">
+            <img src="Card Logos/favourite.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="eight">
+            <img src="Card Logos/fire.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="nine">
+            <img src="Card Logos/flash.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="ten">
+            <img src="Card Logos/flying-broom-and-witch.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="eleven">
+            <img src="Card Logos/google-plus.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twelve">
+            <img src="Card Logos/heaven.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="thirteen">
+            <img src="Card Logos/html-5.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="fourteen">
+            <img src="Card Logos/logistics.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="fifteen">
+            <img src="Card Logos/microsoft.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="sixteen">
+            <img src="Card Logos/moon.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="seventeen">
+            <img src="Card Logos/old-typical-phone.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="eighteen">
+            <img src="Card Logos/risk-skull.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="nineteen">
+            <img src="Card Logos/snowflake.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty">
+            <img src="Card Logos/sun.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty-one">
+            <img src="Card Logos/tv.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty-two">
+            <img src="Card Logos/water.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty-three">
+            <img src="Card Logos/wind-turbine.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty-four">
+            <img src="Card Logos/wolf.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="one">
+            <img src="Card Logos/angel.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="two">
+            <img src="Card Logos/apple (1).png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="three">
+            <img src="Card Logos/apple.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="four">
+            <img src="Card Logos/cloud-service.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="five">
+            <img src="Card Logos/css.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="six">
+            <img src="Card Logos/earth-globe.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="seven">
+            <img src="Card Logos/favourite.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="eight">
+            <img src="Card Logos/fire.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="nine">
+            <img src="Card Logos/flash.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="ten">
+            <img src="Card Logos/flying-broom-and-witch.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="eleven">
+            <img src="Card Logos/google-plus.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twelve">
+            <img src="Card Logos/heaven.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="thirteen">
+            <img src="Card Logos/html-5.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="fourteen">
+            <img src="Card Logos/logistics.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="fifteen">
+            <img src="Card Logos/microsoft.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="sixteen">
+            <img src="Card Logos/moon.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="seventeen">
+            <img src="Card Logos/old-typical-phone.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="eighteen">
+            <img src="Card Logos/risk-skull.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="nineteen">
+            <img src="Card Logos/snowflake.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty">
+            <img src="Card Logos/sun.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty-one">
+            <img src="Card Logos/tv.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty-two">
+            <img src="Card Logos/water.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty-three">
+            <img src="Card Logos/wind-turbine.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+        <div class="memory-card" data-framework="twenty-four">
+            <img src="Card Logos/wolf.png" alt="" class="pictures">
+            <button class="front-face">Card</button>
+        </div>
+    </section>
+    <script src="MemoryGame.js"></script>
+</body>
+
+</html>
